@@ -1,0 +1,21 @@
+button {
+    padding: 5px 10px;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+.audio-list {
+    font-size: 19px;
+}
+
+.audio-instance {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width:360px) {
+    .audio-instance {
+        gap: 2px;
+    }
+}
