@@ -42,11 +42,11 @@ const AudioPlayer = ({ audioFiles, currentAudioIndex, setCurrentAudioIndex }) =>
         <div>
             <h2>Now Playing: {audioFiles[currentAudioIndex].name}</h2>
             <div className="audio-instance">
-            <audio controls autoPlay onEnded={() => setIsPlaying(false)}>
-                <source src={audioFiles[currentAudioIndex].url} type="audio/mp3" />
-                Your browser does not support the audio tag.
-            </audio>
-            <button onClick={togglePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
+                <audio controls autoPlay onEnded={() => setIsPlaying(false)}>
+                    <source src={audioFiles[currentAudioIndex].url} type="audio/mp3" />
+                    Your browser does not support the audio tag.
+                </audio>
+                <button onClick={togglePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
             </div>
         </div>
     );

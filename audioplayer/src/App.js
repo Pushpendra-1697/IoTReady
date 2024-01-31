@@ -40,23 +40,27 @@ const App = () => {
   };
 
   return (
-    <div>
-      <input type='file' onChange={(e) => setAudioUpload(e.target.files[0])} />
-      <button onClick={uploadAudioHandler}>Upload Audio</button>
+    <div className='main'>
+      <div>
+        <input type='file' onChange={(e) => setAudioUpload(e.target.files[0])} />
+        <button onClick={uploadAudioHandler}>Upload Audio</button>
+      </div>
       <AudioPlayer
         audioFiles={audioFiles}
         currentAudioIndex={currentAudioIndex}
         setCurrentAudioIndex={setCurrentAudioIndex}
       />
-      <h3>Playlist</h3>
-      <ul className='audio-list'>
-        {audioFiles.map((audio, index) => (
-          <li key={index}>
-            {audio.name}{' '}
-            <button onClick={() => setCurrentAudioIndex(index)}>Play</button>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <h3>Playlist</h3>
+        <ul className='audio-list'>
+          {audioFiles.map((audio, index) => (
+            <li key={index}>
+              {audio.name}{' '}
+              <button onClick={() => setCurrentAudioIndex(index)}>Play</button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
