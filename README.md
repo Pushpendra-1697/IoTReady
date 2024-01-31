@@ -23,3 +23,7 @@ React.js, localStorage, React-Component, Browser-API, HTML-CSS-JS, HTML-audio-El
 ```
 
 ## Some Screenshots for application
+
+![Screenshot (461)](https://github.com/Pushpendra-1697/IoTReady/assets/104748364/6cd444aa-1295-4079-8a56-d38b9391907d)
+
+![Screenshot (462)](https://github.com/Pushpendra-1697/IoTReady/assets/104748364/0a1ad201-7073-4504-92dc-21f61ad5a486)
